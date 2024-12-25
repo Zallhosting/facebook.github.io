@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 });
 
 // Route: Facebook Login Redirect
-app.get('/login-facebook', (req, res) => {
+app.get('/login-to-facebook', (req, res) => {
   const fbLoginURL = `https://www.facebook.com/v12.0/dialog/oauth?client_id=${FB_APP_ID}&redirect_uri=${REDIRECT_URI}&scope=email,public_profile`;
   res.redirect(fbLoginURL);
 });
